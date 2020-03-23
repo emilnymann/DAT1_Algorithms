@@ -12,16 +12,16 @@ public class MineAlgoritmer {
     public static void main(String[] args) {
 
         // generer data
-        for (int i = 0; i < 10; i++) {
-            int rnd = ThreadLocalRandom.current().nextInt(0, 50 + 1);
+        for (int i = 0; i < 100000; i++) {
+            int rnd = ThreadLocalRandom.current().nextInt(0, 1000000 + 1);
             data.add(rnd);
         }
 
         // sorter data
         Collections.sort(data);
 
-        // foretag søgning efter tallet på index 7 (lidt snyd, men jeg genererer jo tilfældige data...)
-        binarySearch(data.get(7));
+        // foretag søgning efter tallet på index 18375 (lidt snyd, men jeg genererer jo tilfældige data...)
+        binarySearch(data.get(18375));
     }
 
     static int binarySearch(int x) {
