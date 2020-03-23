@@ -19,7 +19,7 @@ public class Kompliceret {
                 System.out.print(".");
             }
 
-            for (int j = 1; j <= Math.pow(2, i); j++) {
+            for (int j = 1; j <= Math.pow(3, i); j++) {
                 resultat = i;
             }
 
